@@ -22,7 +22,7 @@ body {
     padding: var(--space);
 }
 
-.box {
+.plane {
     background-color: var(--primary-color);
     border-color: var(--accent-color);
     border-style: solid;
