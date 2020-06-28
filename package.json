@@ -1,0 +1,29 @@
+{
+  "name": "plane",
+  "version": "1.0.0",
+  "description": "CSS library for creating simple interface",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bidipeppercrap/plane.git"
+  },
+  "keywords": [
+    "css",
+    "plane",
+    "plain",
+    "default",
+    "simple",
+    "box",
+    "shadow",
+    "block"
+  ],
+  "author": "bidipeppercrap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bidipeppercrap/plane/issues"
+  },
+  "homepage": "https://github.com/bidipeppercrap/plane#readme"
+}
