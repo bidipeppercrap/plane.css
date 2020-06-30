@@ -2,9 +2,10 @@
   "name": "plane.css",
   "version": "1.1.0",
   "description": "CSS library for creating simple interface",
-  "main": "index.css",
+  "main": "dist/css/plane.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/plane.min.css dist/css/plane.css"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/bidipeppercrap/plane/issues"
   },
-  "homepage": "https://github.com/bidipeppercrap/plane#readme"
+  "homepage": "https://github.com/bidipeppercrap/plane#readme",
+  "dependencies": {
+    "@ibm/plex": "latest"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0"
+  }
 }

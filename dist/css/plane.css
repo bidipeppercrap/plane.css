@@ -6,7 +6,7 @@
     --shadow-coordinate: 6px 6px;
     --plane-translate-coordinate: 6px, 6px;
     --space: 12px;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
 }
 
 html, body {
