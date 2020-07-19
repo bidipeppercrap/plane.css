@@ -4,6 +4,7 @@
 
 :root {
     --accent-color: #000;
+    --error-color: #f03;
     --border-width: 3px;
     --ease-duration: 0.3s;
     --primary-color: #fff;
@@ -40,7 +41,12 @@ body {
     box-shadow: var(--shadow-coordinate) var(--accent-color);
     outline: none;
     padding: var(--space);
+    position: relative;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.plane-error {
+    border-color: var(--error-color);
+    color: var(--error-color);
 }
 
 .btn {
