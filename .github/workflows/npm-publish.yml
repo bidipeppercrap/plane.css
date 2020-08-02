@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: 12
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
       - run: npm ci
       - name: Build CSS
         run: npm run build
