@@ -1,17 +1,21 @@
-* {
-    font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace !important;
-}
-
 :root {
     --primary-color: #fff;
     --accent-color: #000;
     --error-color: #f03;
+    --space: 12px 12px;
     --border-width: 3px;
-    --ease-duration: 0.3s;
     --shadow-coordinate: 6px 6px;
     --plane-translate-coordinate: 6px, 6px;
-    --space: 12px;
-    --font-size: 18px;
+    --ease-duration: 0.3s;
+    --font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+    --font-size: 15px;
+    --btn-font-size: 18px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
 }
 
 ::selection {
@@ -24,6 +28,12 @@ html, body {
 
 body {
     margin: 0;
+    font-family: var(--font-family);
+}
+
+button,
+input {
+    font: inherit;
 }
 
 .wrapper {
@@ -32,6 +42,10 @@ body {
     padding: var(--space);
 }
 
+.alert,
+.btn,
+.form-control,
+.img-fluid,
 .plane {
     background-color: var(--primary-color);
     border-color: var(--accent-color);
@@ -39,6 +53,7 @@ body {
     border-style: solid;
     border-width: var(--border-width);
     box-shadow: var(--shadow-coordinate) var(--accent-color);
+    font-size: var(--font-size);
     outline: none;
     padding: var(--space);
     position: relative;
@@ -47,35 +62,32 @@ body {
     transition-property: transform, box-shadow;
     transition-timing-function: ease;
 }
-.plane-error {
-    background-color: var(--error-color);
-    color: var(--primary-color);
-}
 
-.btn:hover,
 .btn:focus,
-.input:focus {
+.btn:hover,
+.form-control:focus {
     box-shadow: 0px 0px var(--accent-color);
     transform: translate(var(--plane-translate-coordinate));
 }
 
+.alert {
+    background-color: var(--error-color);
+    color: var(--primary-color);
+}
+
 .btn {
     cursor: pointer;
-    font-size: var(--font-size);
+    font-size: var(--btn-font-size);
     font-weight: 700;
-    position: relative;
     user-select: none;
 }
 
-.input {
-    font-size: var(--font-size);
+.form-control {
     font-weight: 100;
-    position: relative;
 }
 
-img.plane {
+.img-fluid {
     padding: 0;
-    position: relative;
 }
 
 @media (min-width: 768px) {
