@@ -1,6 +1,6 @@
 {
   "name": "plane.css",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "CSS library for creating simple interface",
   "main": "dist/css/plane.min.css",
   "scripts": {
@@ -24,9 +24,9 @@
   "author": "bidipeppercrap",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bidipeppercrap/plane/issues"
+    "url": "https://github.com/bidipeppercrap/plane.css/issues"
   },
-  "homepage": "https://github.com/bidipeppercrap/plane#readme",
+  "homepage": "https://github.com/bidipeppercrap/plane.css#readme",
   "peerDependencies": {
     "@ibm/plex": "latest"
   },
