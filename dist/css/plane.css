@@ -43,10 +43,20 @@ body {
     padding: var(--space);
     position: relative;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+    transition-duration: var(--ease-duration);
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease;
 }
 .plane-error {
     border-color: var(--error-color);
     color: var(--error-color);
+}
+
+.btn:hover,
+.btn:focus,
+.input:focus {
+    box-shadow: 0px 0px var(--accent-color);
+    transform: translate(var(--plane-translate-coordinate));
 }
 
 .btn {
@@ -54,30 +64,19 @@ body {
     font-size: var(--font-size);
     font-weight: 700;
     position: relative;
-    transition-duration: var(--ease-duration);
-    transition-property: transform, box-shadow;
-    transition-timing-function: ease;
     user-select: none;
-}
-.btn:hover {
-    box-shadow: 0px 0px var(--accent-color);
-    transform: translate(var(--plane-translate-coordinate));
 }
 
 .input {
     font-size: var(--font-size);
     font-weight: 100;
     position: relative;
-    transition-duration: var(--ease-duration);
-    transition-property: transform, box-shadow;
-    transition-timing-function: ease;
-}
-.input:focus {
-    box-shadow: 0px 0px var(--accent-color);
-    transform: translate(var(--plane-translate-coordinate));
 }
 
 img.plane {
     padding: 0;
     position: relative;
+}
+
+@media (min-width: 768px) {
 }
