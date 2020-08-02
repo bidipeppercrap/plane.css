@@ -3,11 +3,11 @@
 }
 
 :root {
+    --primary-color: #fff;
     --accent-color: #000;
     --error-color: #f03;
     --border-width: 3px;
     --ease-duration: 0.3s;
-    --primary-color: #fff;
     --shadow-coordinate: 6px 6px;
     --plane-translate-coordinate: 6px, 6px;
     --space: 12px;
@@ -48,8 +48,8 @@ body {
     transition-timing-function: ease;
 }
 .plane-error {
-    border-color: var(--error-color);
-    color: var(--error-color);
+    background-color: var(--error-color);
+    color: var(--primary-color);
 }
 
 .btn:hover,
