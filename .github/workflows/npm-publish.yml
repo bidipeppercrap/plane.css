@@ -16,6 +16,10 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build
+      - run: |
+          git add .
+          git commit -m "Build CSS"
+          git push
 
   publish-npm:
     needs: build
