@@ -32,8 +32,5 @@
   },
   "devDependencies": {
     "clean-css-cli": "^4.3.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/bidipeppercrap"
   }
 }
