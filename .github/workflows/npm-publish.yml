@@ -14,18 +14,16 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.ref }}
       - run: npm ci
       - name: Build CSS
         run: npm run build
-      - name: Push to GitHub
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Build CSS"
-          git push
+      # - name: Push to GitHub
+      #   run: |
+      #     git config user.name github-actions
+      #     git config user.email github-actions@github.com
+      #     git add .
+      #     git commit -m "Build CSS"
+      #     git push
 
   publish-npm:
     needs: build
@@ -39,7 +37,7 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
     needs: build
