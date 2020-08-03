@@ -90,5 +90,16 @@ input {
     padding: 0;
 }
 
+.btn,
+a.btn,
+.plane,
+.form-control {
+    color: var(--accent-color);
+}
+
+a.btn {
+    text-decoration: none;
+}
+
 @media (min-width: 768px) {
 }

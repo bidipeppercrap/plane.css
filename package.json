@@ -1,6 +1,6 @@
 {
   "name": "plane.css",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "It's a plane world with levitation",
   "main": "dist/css/plane.min.css",
   "scripts": {
