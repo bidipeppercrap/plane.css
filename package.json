@@ -1,6 +1,6 @@
 {
   "name": "plane.css",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "CSS library for creating simple interface",
   "main": "dist/css/plane.min.css",
   "scripts": {
