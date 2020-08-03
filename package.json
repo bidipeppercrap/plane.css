@@ -1,7 +1,7 @@
 {
   "name": "plane.css",
-  "version": "1.6.1",
-  "description": "CSS library for creating simple interface",
+  "version": "1.6.2",
+  "description": "It's a plane world with levitation",
   "main": "dist/css/plane.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
