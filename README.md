@@ -1,9 +1,7 @@
-# Plane
-
+![Logo](https://raw.githubusercontent.com/bidipeppercrap/plane.css/e7a3681b808f8e4db02292a8cb03eace2fc3dea6/src/assets/logo.svg "plane.css Official Logo")
 It's a plane world with levitation.
 
 ## Installation
-
 1. `npm i @ibm/plex`
 2. Only import `IBM Plex Mono (Latin 1)` into your global style to get the best performance:
 ```
