@@ -21,3 +21,4 @@ It's a plane world with levitation.
     font-weight: 100;
 }
 ```
+3. `npm i plane.css`
