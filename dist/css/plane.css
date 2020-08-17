@@ -70,11 +70,6 @@ input {
     transform: translate(var(--plane-translate-coordinate));
 }
 
-.alert {
-    background-color: var(--error-color);
-    color: var(--primary-color);
-}
-
 .btn {
     cursor: pointer;
     font-size: var(--btn-font-size);
@@ -99,6 +94,11 @@ a.btn,
 
 a.btn {
     text-decoration: none;
+}
+
+.alert {
+    background-color: var(--error-color);
+    color: var(--primary-color);
 }
 
 @media (min-width: 768px) {
